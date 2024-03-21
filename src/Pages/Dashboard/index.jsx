@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { MdOutlineManageAccounts } from "react-icons/md";
 import { FaDog } from "react-icons/fa6";
 import Profile from '../../Assets/images/profile.png'
-import Malay from '../../Assets/images/maly.png'
-
 
 const Dashboard = () => {
   const [activeCategory, setActiveCategory] = useState('');
@@ -87,7 +85,7 @@ const ClientDetails = () => {
       <div className='mt-4'>
         <p className='text-[18px] font-medium'>Profile picture change</p>
         <div className='flex items-center gap-3 mt-3'>
-         <div className='w-20 h-20'><img className='w-[100%] h-[100%] bg-red-500 rounded-full' src={Profile} alt="" /></div>
+         <div className='w-20 h-20'><img className='w-[100%] h-[100%] rounded-full' src={Profile} alt="" /></div>
           <button className='border px-3 py-1 rounded'>Change</button>
           <button className='border px-3 py-1 rounded bg-gray-100'>Remove</button>
         </div>
