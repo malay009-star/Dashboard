@@ -24,14 +24,14 @@ const Dashboard = () => {
               onClick={() => handleCategoryClick('clientDetails')}
             >
               <MdOutlineManageAccounts className='text-2xl' />
-              <p className='text-sm hover:text-[#e2e2e2]'> Client Information</p>
+              <p className='text-[15px] hover:text-[#e2e2e2]'> Client Information</p>
             </li>
             <li
               className="cursor-pointer flex items-center gap-3"
               onClick={() => handleCategoryClick('DogInfo')}
             >
               <FaDog className='text-lg' />
-              <p className='text-sm hover:text-[#e2e2e2]'>Dogs Information</p>
+              <p className='text-[15px] hover:text-[#e2e2e2]'>Dogs Information</p>
             </li>
             {/* <li
               className="cursor-pointer text-sm"
