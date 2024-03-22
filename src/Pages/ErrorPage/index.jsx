@@ -11,7 +11,7 @@ function index() {
       <div className='flex flex-col items-center gap-y-5'>
         <h1 className='text-6xl'>404 Not Found</h1>
         <p>Your visited page not found. You may go home page.</p>
-        <Link to="/home" className='bg-[#DB4444] text-base py-2 px-5 font-light rounded text-[#fff] mt-2'>Back to home page</Link>
+        <Link to="/home" className='bg-[#ea660b] text-base py-2 px-5 font-light rounded text-[#fff] mt-2'>Back to home page</Link>
       </div>
     </div>
   )

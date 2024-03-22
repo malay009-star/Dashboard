@@ -42,7 +42,7 @@ function DefaltLauout({ children }) {
           <ul className={`flex gap-7 ${isMenuOpen ? 'open' : ''}`}>
             {navitem.map((item) => {
               return <li className=''><NavLink to={item.link} className={({ isActive }) => {
-                return isActive ? 'border-b border-[#DB4444] hover:text-[#DB4444] text-[#DB4444] font-normal text-[14px] sm:text-[16px]' : 'text-[14px] sm:text-[16px] font-normal hover:text-[#DB4444]'
+                return isActive ? 'border-b border-[#ea660b] hover:text-[#ea660b] text-[#ea660b] text-[14px] sm:text-[16px]' : 'text-[14px] sm:text-[16px] hover:text-[#ea660b]'
               }
               }>{item.label}</NavLink></li>
             })}

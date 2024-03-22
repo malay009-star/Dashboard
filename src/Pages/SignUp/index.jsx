@@ -31,10 +31,10 @@ function index() {
   return (
       <div className='container flex justify-center pt-10'>
         <form onSubmit={handleSubmit} className='w-full md:w-[50%] primary_shadow px-6 pt-6 pb-10 rounded-md' action="">
-          <h3 className='inter_font tracking-wider text-[22px] sm:text-[25px] font-medium'>Create an account</h3>
-          <h5 className='inter_font tracking-wider text-[15px] sm:text-[15.7px] sm:mt-2'>Enter your details below</h5>
+          <h3 className='text-[21px] sm:text-[23px] font-medium'>Create an account</h3>
+          <h5 className='text-[15px] sm:text-[15.7px] sm:mt-2'>Enter your details below</h5>
           <div className='mt-5 sm:mt-8' htmlFor=''>
-            <input className='font-light text-[14.5px] pb-1 inline-block border-b focus:outline-none w-full text-[#303030]'
+            <input className='text-[14.5px] pb-1 inline-block border-b focus:outline-none w-full text-[#303030]'
               type='text'
               name='name'
               autoComplete='off'
@@ -47,7 +47,7 @@ function index() {
             {errors.name && touched.name ? (<p className='text-[#DB4444] text-xs'>{errors.name}</p>) : null}
           </div><br />
           <div className='mt-1' htmlFor=''>
-            <input className='font-light text-[14.5px] pb-1 inline-block border-b focus:outline-none w-full text-[#303030]'
+            <input className='text-[14.5px] pb-1 inline-block border-b focus:outline-none w-full text-[#303030]'
               type='email'
               name='email'
               autoComplete='off'
@@ -60,7 +60,7 @@ function index() {
             {errors.email && touched.email ? (<p className='text-[#DB4444] text-xs'>{errors.email}</p>) : null}
           </div><br />
           <div className='mt-1' htmlFor=''>
-            <input className='font-light text-[14.5px] pb-1 inline-block focus:outline-none border-b w-full text-[#000]'
+            <input className='text-[14.5px] pb-1 inline-block focus:outline-none border-b w-full text-[#000]'
               type='password'
               name='password'
               autoComplete='off'
@@ -72,14 +72,14 @@ function index() {
             />
             {errors.password && touched.password ? (<p className='text-[#DB4444] text-xs'>{errors.password}</p>) : null}
           </div>
-          <button type='submit' className='text-[15px] text-white text-center hover:bg-[#e25353] bg-[#DB4444] inline-block w-full py-[7px] rounded mt-7'>Create Account</button>
+          <button type='submit' className='text-[#ffffff] text-center bg-[#ea660b] inline-block w-full py-[7px] rounded mt-7'>Create Account</button>
           <button className='flex items-center justify-center border w-full mt-5 py-2 gap-2'>
-            <FcGoogle />
+            <FcGoogle className='text-[22px]'/>
             <p className='text-[15px]'>Sign up with Google</p>
           </button>
           <div className='flex items-center justify-evenly gap-x-3 mt-8 w-full'>
             <p className='text-[15px]'>Already have account?</p>
-            <Link to='/login' className='text-[15px] border-b border-[#4d4d4d] hover:border-b-[#DB4444] hover:text-[#DB4444]'>Log in</Link>
+            <Link to='/login' className='text-[15px] border-b border-[#4d4d4d] hover:border-b-[#ea660b] hover:text-[#ea660b]'>Log in</Link>
           </div>
         </form>
         <Toaster />

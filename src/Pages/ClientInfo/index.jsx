@@ -28,10 +28,10 @@ function index() {
   return (
     <div className='container flex justify-center pt-10'>
       <form onSubmit={handleSubmit} className='w-full md:w-[50%] lg:w-[50%] primary_shadow px-6 pt-6 pb-7 rounded-md mb-8'>
-      <h3 className='inter_font tracking-wider text-[22px] sm:text-[24px] lg:text-[25px] font-medium'>Client Information</h3>
+      <h3 className='text-[21px] sm:text-[23px] font-medium'>Client Information</h3>
         <div className='flex flex-col gap-y-8 mt-3'>
           <div className=''>
-            <input className='font-light text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
+            <input className='text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
               type='text'
               name='name'
               autoComplete='off'
@@ -44,7 +44,7 @@ function index() {
             {errors.name && touched.name ? (<p className='text-[#DB4444] text-sm'>{errors.name}</p>) : null}
           </div>
           <div className=''>
-            <input className='font-light text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
+            <input className='text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
               type='email'
               name='email'
               autoComplete='off'
@@ -57,7 +57,7 @@ function index() {
             {errors.email && touched.email ? (<p className='text-[#DB4444] text-sm'>{errors.email}</p>) : null}
           </div>
           <div className=''>
-            <input className='font-light text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
+            <input className='text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
               type='text'
               name='address'
               autoComplete='off'
@@ -70,7 +70,7 @@ function index() {
             {errors.address && touched.address ? (<p className='text-[#DB4444] text-sm'>{errors.address}</p>) : null}
           </div>
           <div className=''>
-            <input className='font-light text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
+            <input className='text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
               type='text'
               name='postalCode'
               autoComplete='off'
@@ -83,7 +83,7 @@ function index() {
             {errors.postalCode && touched.postalCode ? (<p className='text-[#DB4444] text-sm'>{errors.postalCode}</p>) : null}
           </div>
           <div className=''>
-            <input className='font-light text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
+            <input className='text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
               type='text'
               name='city'
               autoComplete='off'
@@ -96,7 +96,7 @@ function index() {
             {errors.city && touched.city ? (<p className='text-[#DB4444] text-sm'>{errors.city}</p>) : null}
           </div>
           <div className=''>
-            <input className='font-light text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
+            <input className='text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
               type='tel'
               name='phone1'
               autoComplete='off'
@@ -109,7 +109,7 @@ function index() {
             {errors.phone1 && touched.phone1 ? (<p className='text-[#DB4444] text-sm'>{errors.phone1}</p>) : null}
           </div>
           <div className=''>
-            <input className='font-light text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
+            <input className='text-[15px] bg-[#F5F5F5] rounded ps-3 pe-2 py-2 inline-block focus:outline-none w-full text-[#303030]'
               type='tel'
               name='phone2'
               autoComplete='off'
@@ -123,7 +123,7 @@ function index() {
           </div>
         </div>
         <div className='flex justify-end mt-5'>
-          <button type='submit' className='font-light text-[15px] text-[#ffffff] hover:bg-[#c54b4b] bg-[#DB4444] px-6 py-[8px] rounded'>Send Client Info</button>
+          <button type='submit' className='text-[15px] text-[#ffffff] bg-[#ea660b] px-5 py-[8px] rounded'>Send Client Info</button>
         </div>
       </form>
       <Toaster />

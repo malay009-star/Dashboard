@@ -39,9 +39,9 @@ function App() {
           </AuthLauout>
         } />
         <Route path='/dashboard' element={
-          <AuthLauout>
+          // <AuthLauout>
             <Dashboard />
-          </AuthLauout>
+          // </AuthLauout>
         } />
         <Route path='*' element={
           <ErrorPage />
