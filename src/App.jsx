@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={
           <AuthLauout>
-            <Dogbookingsystem />
+            <Login />
           </AuthLauout>
         } />
         <Route path='/login' element={
