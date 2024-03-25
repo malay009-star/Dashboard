@@ -18,8 +18,8 @@ const KeyDetails = () => {
           onChange={handleKeysCheckboxChange}
           className='rounded'
         />
-        {willProvideKeys ? <label htmlFor="will_provide_keys" className='text-[15px] ml-2'>Yes, I will provide keys</label>
-          : <label htmlFor="will_provide_keys" className='text-[15px] ml-2'>Will Provide Keys?</label>}
+        {willProvideKeys ? <label htmlFor="will_provide_keys" className='text-[14px] ml-2'>Yes, I will provide keys</label>
+          : <label htmlFor="will_provide_keys" className='text-[14px] ml-2'>Will Provide Keys?</label>}
       </div>
     </div>
   );

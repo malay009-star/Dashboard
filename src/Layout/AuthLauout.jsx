@@ -38,11 +38,11 @@ function DefaltLauout({ children }) {
       {/* navigation bar */}
       <header className=''>
         <nav className='container flex justify-between items-center min-h-16 w-full'>
-          <Link to="/" className="font-semibold text-[17px] sm:text-[20px]">Clientprofile</Link>
+          <Link to="/" className="font-semibold text-[17px] sm:text-[20px]"></Link>
           <ul className={`flex gap-7 ${isMenuOpen ? 'open' : ''}`}>
             {navitem.map((item) => {
               return <li className=''><NavLink to={item.link} className={({ isActive }) => {
-                return isActive ? 'border-b border-[#ea660b] hover:text-[#ea660b] text-[#ea660b] text-[14px] sm:text-[16px]' : 'text-[14px] sm:text-[16px] hover:text-[#ea660b]'
+                return isActive ? 'hover:text-[#ea660b] text-[#ea660b] text-[14px] sm:text-[15px]' : 'text-[14px] sm:text-[15px] hover:text-[#ea660b]'
               }
               }>{item.label}</NavLink></li>
             })}

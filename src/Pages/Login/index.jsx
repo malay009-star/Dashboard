@@ -20,7 +20,7 @@ function index() {
     initialValues: initialValues,
     validationSchema: signInSchema,
     onSubmit: (values, { resetForm }) => {
-      toast.success('form submitted')
+      // toast.success('form submitted')
       resetForm();
     },
   })
@@ -29,10 +29,10 @@ function index() {
   return (
     <div className='container flex justify-center pt-10'>
       <form onSubmit={handleSubmit} className='w-full md:w-[50] lg:w-[45%] primary_shadow px-8 pt-6 pb-16 rounded-md'>
-        <h3 className='tracking-wider text-[22px] sm:text-[23px] font-medium'>Log in</h3>
-        <h5 className='tracking-wider text-[15px] sm:text-[14px] md:mt-1'>Enter User & Password</h5>
+        <h3 className='text-[22px] font-medium'>Log in</h3>
+        <h5 className='sm:text-[13px] md:mt-1'>Enter User & Password</h5>
         <div className='mt-4 sm:mt-8' htmlFor=''>
-          <input className='text-[14.5px] pb-1 inline-block border-b focus:outline-none w-full text-[#303030] tracking-wider'
+          <input className='text-[14px] pb-1 inline-block border-b focus:outline-none w-full text-[#303030] tracking-wider'
             type='email'
             name='email'
             autoComplete='off'
@@ -45,7 +45,7 @@ function index() {
           {errors.email && touched.email ? (<p className='text-[#DB4444] text-xs'>{errors.email}</p>) : null}
         </div><br />
         <div className='mt-1' htmlFor=''>
-          <input className='text-[14.5px] pb-1 inline-block focus:outline-none border-b w-full text-[#000] tracking-wider'
+          <input className='text-[14px] pb-1 inline-block focus:outline-none border-b w-full text-[#000] tracking-wider'
             type='password'
             name='password'
             autoComplete='off'
@@ -58,8 +58,8 @@ function index() {
           {errors.password && touched.password ? (<p className='text-[#DB4444] text-xs'>{errors.password}</p>) : null}
         </div>
         <div className='flex items-center justify-between gap-x-3 mt-8 w-full'>
-          <button type='submit' className='text-[15px] text-[#ffffff] bg-[#ea660b] px-6 py-[6px] rounded tracking-wider'>Log In</button>
-          <Link to='/signup' className='text-[15px] text-[#ea660b] cursor-pointer tracking-wier'>Create Account?</Link>
+          <button type='submit' className='text-[15px] text-[#ffffff] bg-[#ea660b] px-6 py-[5px] rounded'>Log In</button>
+          <Link to='/signup' className='text-[14px] text-[#ea660b] cursor-pointer'>Create Account?</Link>
         </div>
       </form>
       <Toaster />

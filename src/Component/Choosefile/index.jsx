@@ -36,7 +36,7 @@ const ClientImgUpload = () => {
             onChange={handleImageUpload}
             className='hidden'
           />
-          <label htmlFor="dog_image" className='bg-[#ea660b] px-[12px] py-[7px] text-[#ffffff] rounded'>Choose file</label>
+          <label htmlFor="dog_image" className='text-sm bg-[#ea660b] px-[10px] py-[6px] text-[#ffffff] rounded'>Choose file</label>
         </div>
       </div>
     </div>
